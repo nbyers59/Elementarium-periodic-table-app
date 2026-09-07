@@ -6,6 +6,9 @@
   <meta name="theme-color" content="#070a13">
   <title>Elementarium</title>
 
+  <link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#070a13">
+<link rel="apple-touch-icon" href="./icon.svg">
   <style>
     :root {
       --bg: #070a13;
@@ -1474,5 +1477,15 @@
     setSelected(selected);
     updateCube();
   </script>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("./service-worker.js")
+        .then(() => console.log("Elementarium offline mode is ready."))
+        .catch(error => console.warn("Offline mode could not start:", error));
+    });
+  }
+</script>
 </body>
             </html>
