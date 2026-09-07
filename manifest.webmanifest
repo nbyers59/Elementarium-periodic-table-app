@@ -1,0 +1,26 @@
+{
+  "id": "/Elementarium-periodic-table-app/",
+  "name": "Elementarium — Periodic Table",
+  "short_name": "Elementarium",
+  "description": "An interactive, offline-first periodic table of the elements.",
+  "start_url": "/Elementarium-periodic-table-app/",
+  "scope": "/Elementarium-periodic-table-app/",
+  "display": "standalone",
+  "background_color": "#070a13",
+  "theme_color": "#070a13",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
